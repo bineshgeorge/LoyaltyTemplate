@@ -1,275 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cart - Partner Portal</title>
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/2.3.0/css/reset.min.css">
-    <link rel="stylesheet" href="assets/css/min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/customs.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/loadpage.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
-    <link rel="stylesheet" href="assets/css/icons.css">
-    <link rel="stylesheet" href="assets/css/carousel-slide.css">
-    <link rel="stylesheet" href="assets/slick/slick.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Redemption cart - PYXiiS DIGI Partner Programme</title>
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="assets/css/pages.css">
 </head>
-<body>
-    <!-- TOPBAR: rendered from the member menu -->
-    <div id="nav-header">
-        <div class="over-menu"></div>
-        <div class="container-fluid">
-            <header class="header">
-                <div class="container">
-                    <div class="hamburger-menu"><div class="bar"></div></div>
-                    <div class="row">
-                        <div class="col-12 col-lg-3 logo"><div><a href="home.html"><img src="assets/images/layout/logo-white.png" alt="Logo"></a></div></div>
-                        <div class="col-lg-9 desk-menu">
-                            <nav class="box-menu">
-                                <div class="menu-container">
-                                    <div class="menu-head logo"><img src="assets/images/layout/logo-white.png" alt="Logo"></div>
-                                    <div class="menu-header-container mobiledraw">
-                                        <ul id="cd-primary-nav" class="menu">
-                                            <li class="menu-item mainnav"><a href="home.html">Home</a></li>
-                                            <li class="menu-item mainnav menu-item-has-children">
-                                                <a href="#">Earn</a>
-                                                <ul class="sub-menu">
-                                                    <li class="back"><a href="#">Earn</a></li>
-                                                    <li><div class="text-left"><ul>
-                                                        <li class="menu-item"><a href="#">Campaigns</a></li>
-                                                        <li class="menu-item"><a href="#">Incentives</a></li>
-                                                        <li class="menu-item"><a href="#">Deal registration</a></li>
-                                                        <li class="menu-item"><a href="#">Product registration</a></li>
-                                                        <li class="menu-item"><a href="#">Training and certification</a></li>
-                                                        <li class="menu-item"><a href="#">Referrals</a></li>
-                                                    </ul></div></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item mainnav menu-item-has-children">
-                                                <a href="#">Rewards</a>
-                                                <ul class="sub-menu">
-                                                    <li class="back"><a href="#">Rewards</a></li>
-                                                    <li><div class="text-left"><ul>
-                                                        <li class="menu-item"><a href="catalogue.html">Catalogue</a></li>
-                                                        <li class="menu-item"><a href="#">Categories</a></li>
-                                                        <li class="menu-item"><a href="cart.html">Cart</a></li>
-                                                    </ul></div></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item mainnav menu-item-has-children">
-                                                <a href="#">Benefits</a>
-                                                <ul class="sub-menu">
-                                                    <li class="back"><a href="#">Benefits</a></li>
-                                                    <li><div class="text-left"><ul>
-                                                        <li class="menu-item"><a href="#">Partner tier benefits</a></li>
-                                                        <li class="menu-item"><a href="#">Exclusive offers</a></li>
-                                                        <li class="menu-item"><a href="info.html">Programme benefits</a></li>
-                                                    </ul></div></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item mainnav menu-item-has-children">
-                                                <a href="#">Activity</a>
-                                                <ul class="sub-menu">
-                                                    <li class="back"><a href="#">Activity</a></li>
-                                                    <li><div class="text-left"><ul>
-                                                        <li class="menu-item"><a href="statement.html">Points earned</a></li>
-                                                        <li class="menu-item"><a href="statement.html">Points redeemed</a></li>
-                                                        <li class="menu-item"><a href="statement.html">Transactions</a></li>
-                                                        <li class="menu-item"><a href="history.html">Pending rewards and orders</a></li>
-                                                        <li class="menu-item"><a href="statement.html">Expiring points</a></li>
-                                                    </ul></div></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item mainnav menu-item-has-children">
-                                                <a href="#">My company</a>
-                                                <ul class="sub-menu">
-                                                    <li class="back"><a href="#">My company</a></li>
-                                                    <li><div class="text-left"><ul>
-                                                        <li class="menu-item"><a href="#">Users and invites</a></li>
-                                                        <li class="menu-item"><a href="#">Company profile</a></li>
-                                                    </ul></div></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item mainnav menu-item-has-children">
-                                                <a href="#">Support</a>
-                                                <ul class="sub-menu">
-                                                    <li class="back"><a href="#">Support</a></li>
-                                                    <li><div class="text-left"><ul>
-                                                        <li class="menu-item"><a href="contact-us.html">Contact us</a></li>
-                                                        <li class="menu-item"><a href="info.html">FAQ</a></li>
-                                                        <li class="menu-item"><a href="info.html">Programme rules</a></li>
-                                                    </ul></div></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item mainnav cart-icon"><a href="cart.html"><i class="icon_cart"></i><span class="cart-no">2</span></a></li>
-                                            <li class="menu-item"><a href="profile.html">My profile</a></li>
-                                            <li class="menu-item"><a href="login.html">Sign out</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </div>
+<body data-terms-accepted="true">
+
+<header class="site-nav"><div class="container"><div class="inner"><a class="brand" href="home.html" aria-label="PYXiiS DIGI home"><span class="mark"><svg><use href="#i-logo"/></svg></span><span>PYXiiS<small>DIGI</small></span></a><button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false"><svg><use href="#i-menu"/></svg></button><ul class="nav-links" id="primary-nav"><li><a href="home.html">Home</a></li><li><a href="#" aria-haspopup="true">Earn <svg><use href="#i-chev"/></svg></a><div class="dropdown-panel"><a href="#">Campaigns</a><a href="#">Incentives</a><a href="#">Deal registration</a><a href="#">Product registration</a><a href="#">Training and certification</a><a href="#">Referrals</a></div></li><li class="active"><a href="#" aria-haspopup="true">Rewards <svg><use href="#i-chev"/></svg></a><div class="dropdown-panel"><a href="catalogue.html">Catalogue</a><a href="#">Categories</a><a href="cart.html">Cart</a></div></li><li><a href="#" aria-haspopup="true">Benefits <svg><use href="#i-chev"/></svg></a><div class="dropdown-panel"><a href="#">Partner tier benefits</a><a href="#">Exclusive offers</a><a href="info.html">Programme benefits</a></div></li><li><a href="#" aria-haspopup="true">Activity <svg><use href="#i-chev"/></svg></a><div class="dropdown-panel"><a href="statement.html">Points statement</a><a href="history.html">Orders and pending rewards</a><a href="statement.html">Expiring points</a></div></li><li><a href="#" aria-haspopup="true">My company <svg><use href="#i-chev"/></svg></a><div class="dropdown-panel"><a href="#">Users and invites</a><a href="#">Company profile</a></div></li><li><a href="#" aria-haspopup="true">Support <svg><use href="#i-chev"/></svg></a><div class="dropdown-panel"><a href="contact-us.html">Contact us</a><a href="info.html">FAQ</a><a href="info.html">Programme rules</a></div></li></ul><div class="nav-tools"><button class="icon-btn" type="button" aria-label="Search"><svg><use href="#i-search"/></svg></button><a class="icon-btn" href="cart.html" aria-label="Cart, 2 items"><svg><use href="#i-cart"/></svg><span class="count">2</span></a><a class="user-chip" href="profile.html"><span class="avatar">PR</span><span class="user-name">Priya Raman</span><svg width="12" height="12"><use href="#i-chev"/></svg></a></div></div></div></header>
+
+<main>
+<section class="page-head has-stats"><div class="page-head-img" style="background-image:url(assets/images/banner/cart_bg.jpg)"></div><div class="container"><div class="crumbs"><a href="home.html">Home</a> <span>/</span> <a href="catalogue.html">Catalogue</a> <span>/</span> <span>Cart</span></div><p class="kicker">Rewards</p><h1>Redemption cart</h1></div></section><div class="container stats-wrap">
+  <div class="card-x stats">
+    <div class="who">
+      <span class="avatar avatar-lg">PR</span>
+      <div><strong>Priya Raman</strong><span>Gold partner</span><span>Northwind Distribution</span></div>
+      <a href="profile.html" aria-label="View profile"><svg><use href="#i-arrow"/></svg></a>
     </div>
-
-    <div class="postlogin">
-        <div>
-            <main role="main" class="pb-3">
-
-    <div class="content-section">
-
-    <div class="main-banner" style="background-image: url('assets/images/banner/cart_bg.jpg');">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 static-banner-title">
-                    <hr class="title-line" />
-                    <h1 class="text-white text-semibold">Redemption Cart</h1>
-                </div>
-            </div>
-        </div>
+    <div><svg><use href="#i-coins"/></svg><div class="num">12,450</div><div class="lbl">Available points</div></div>
+    <div><svg><use href="#i-clock"/></svg><div class="num">1,200</div><div class="lbl">Pending points</div></div>
+    <div><svg><use href="#i-gift"/></svg><div class="num">3,800</div><div class="lbl">Points redeemed</div></div>
+    <div><svg><use href="#i-hourglass"/></svg><div class="num">250</div><div class="lbl">Points expired</div></div>
+  </div>
+</div>
+<section class="page-body after-stats"><div class="container">
+  <ol class="steps"><li class="current">Cart</li><li>Summary</li><li>Completed</li></ol>
+  <div class="row g-4">
+    <div class="col-lg-8">
+      <div class="card-x card-pad">
+        <h2 class="block-title">Your items</h2>
+        <div class="table-wrap"><table class="table-x stack">
+          <thead><tr><th>Item</th><th class="num">Unit points</th><th>Quantity</th><th class="num">Total points</th><th></th></tr></thead>
+          <tbody>
+            <tr><td data-label="Item"><div class="cart-item"><div class="cart-thumb"><img src="assets/images/rewards/amazon-voucher.png" alt=""></div><div><strong>Amazon voucher 50</strong><span>E-voucher delivered by email.</span></div></div></td><td class="num" data-label="Unit points">2,500</td><td data-label="Quantity"><div class="qty"><button type="button" aria-label="Decrease">&minus;</button><input type="number" name="quantity" value="2" min="1" max="10" aria-label="Quantity"><button type="button" aria-label="Increase">+</button></div></td><td class="num" data-label="Total points">5,000</td><td data-label=""><button type="button" class="remove-btn" aria-label="Remove item"><svg><use href="#i-trash"/></svg></button></td></tr>
+            <tr><td data-label="Item"><div class="cart-item"><div class="cart-thumb"><svg aria-hidden="true"><use href="#i-cap"/></svg></div><div><strong>Training credit</strong><span>One certification exam credit.</span></div></div></td><td class="num" data-label="Unit points">1,000</td><td data-label="Quantity"><div class="qty"><button type="button" aria-label="Decrease">&minus;</button><input type="number" name="quantity" value="1" min="1" max="10" aria-label="Quantity"><button type="button" aria-label="Increase">+</button></div></td><td class="num" data-label="Total points">1,000</td><td data-label=""><button type="button" class="remove-btn" aria-label="Remove item"><svg><use href="#i-trash"/></svg></button></td></tr>
+          </tbody>
+        </table></div>
+        <div class="form-actions"><a href="catalogue.html" class="btn btn-blue-soft"><svg><use href="#i-arrow-l"/></svg> Back to catalogue</a></div>
+      </div>
     </div>
-    <div class="clearfix"></div>
-
-                <!-- POINT SUMMARY: shown on every signed-in page -->
-                <div class="a_mask_wrapper pt-4 pb-2 bg-grey">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="row">
-                                    <div class="col-12 mb-5 text-white profile-text">
-                                        <hr class="title-line" />
-                                        <h1 class="text-regular">Priya Raman</h1>
-                                        <p>Gold partner<br>Company: Northwind Distribution</p>
-                                        <div class="clearfix mt-5"></div>
-                                        <a href="#" class="btn-link-blue">Tier benefits</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-8 point-sum-wrapper">
-                                <div class="row">
-                                    <div class="col-6"><div class="points-sum"><div class="points-sum_icon"><i class="icons icon_coin"></i></div><div class="points-sum_details"><h3>12,450</h3><p>Available Points</p></div></div></div>
-                                    <div class="col-6"><div class="points-sum"><div class="points-sum_icon"><i class="icons icon_trophy"></i></div><div class="points-sum_details"><h3>1,200</h3><p>Pending Points</p></div></div></div>
-                                    <div class="col-6"><div class="points-sum"><div class="points-sum_icon"><i class="icons icon_reward"></i></div><div class="points-sum_details"><h3>3,800</h3><p>Points Redeemed</p></div></div></div>
-                                    <div class="col-6"><div class="points-sum"><div class="points-sum_icon"><i class="icons icon_clock"></i></div><div class="points-sum_details"><h3>250</h3><p>Points Expired</p></div></div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-        <div class="container mt-5">
-            <div class="redemption-wrapper pt-5">
-
-            <div class="row">
-                <div class="col-10 m-auto">
-                    <div id="progress">
-                        <div id="progress-bar"></div>
-                        <ul id="progress-num">
-                            <li class="step complete"><i class="icon_cart_white"></i><span>Cart</span></li>
-                            <li class="step"><i class="icon_summary_redblank"></i><span>Summary</span></li>
-                            <li class="step"><i class="icon_complete_red"></i><span>Completed</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix pt-5 pb-5"></div>
-
-                <div class="tab-content cart-table">
-                    <div class="tab-pane active" id="redemption_cart">
-                        <div class="tab-content-box">
-                            <table class="redemption_table">
-                                <thead><tr><th>Action</th><th>Image</th><th>Product Name</th><th>Unit Point</th><th>Quantity</th><th>Total Points</th></tr></thead>
-                                <tbody>
-                                <tr>
-                                    <td><button type="button" class="btn btn-link btn-sm p-0"><i class="icon_delete"></i></button></td>
-                                    <td><img src="assets/images/rewards/amazon-voucher.png" alt=""></td>
-                                    <td><h4 class="rewards-title">Amazon voucher 50</h4><p><span class="rewards-desc">E-voucher delivered by email.</span></p></td>
-                                    <td><p class="rewards_points">2,500</p></td>
-                                    <td><div class="number-input"><button type="button" class="minus"></button><input class="quantity" min="1" name="quantity" value="2" type="number"><button type="button" class="plus"></button></div></td>
-                                    <td><p class="rewards_points">5,000</p></td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-link btn-sm p-0"><i class="icon_delete"></i></button></td>
-                                    <td><img src="assets/images/rewards/amazon-voucher.png" alt=""></td>
-                                    <td><h4 class="rewards-title">Training credit</h4><p><span class="rewards-desc">One certification exam credit.</span></p></td>
-                                    <td><p class="rewards_points">1,000</p></td>
-                                    <td><div class="number-input"><button type="button" class="minus"></button><input class="quantity" min="1" name="quantity" value="1" type="number"><button type="button" class="plus"></button></div></td>
-                                    <td><p class="rewards_points">1,000</p></td>
-                                </tr>
-
-                                </tbody>
-                                <tfoot>
-                                    <tr class="balance-tr cart-tb-footer"><td colspan="6">
-                                        <table class="balance-table">
-                                            <tr><td><p class="cart_qty">Quantity: <span class="cart_quantity">3</span></p></td><td><p class="total_title">Points Used</p></td><td><p class="total_rewards_points">6,000 Points</p></td></tr>
-                                            <tr class="cart-tb-footer"><td>&nbsp;</td><td><p class="total_title">Available Points</p></td><td><p class="total_rewards_points">12,450 Points</p></td></tr>
-                                            <tr class="cart-tb-footer"><td>&nbsp;</td><td><p class="total_title">Balance After Redemption</p></td><td><p class="total_rewards_points">6,450 Points</p></td></tr>
-                                        </table>
-                                    </td></tr>
-                                </tfoot>
-                            </table>
-                            <!-- Error state, shown when the total exceeds the available points -->
-                            <!-- <span style="color: red; font-weight: bold; font-style: italic; float: right;"><span class="asterisk">*</span> Insufficient points for this order.</span> -->
-                            <div class="clearfix pt-5"></div>
-
-                <div class="row">
-                    <div class="col-12 mt-5 mb-5 text-center">
-                        <div class="col-md-7 m-auto">
-                            <div class="row">
-                                <div class="col-md-6 dual-btn-left"><a href="catalogue.html" class="btn btn-arrow btn-blue">Back to catalogue</a></div>
-                                <div class="col-md-6 dual-btn-right"><a href="checkout.html" class="btn btn-arrow btn-yellow">Checkout</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="col-lg-4">
+      <aside class="card-x card-pad summary">
+  <h2 class="block-title">Summary</h2>
+  <dl><div class="row-x"><dt>Items</dt><dd>3</dd></div><div class="row-x"><dt>Points used</dt><dd>6,000</dd></div><div class="row-x"><dt>Available points</dt><dd>12,450</dd></div><div class="row-x total"><dt>Balance after redemption</dt><dd>6,450 points</dd></div></dl>
+  <a href="checkout.html" class="btn btn-gold">Checkout <svg><use href="#i-arrow"/></svg></a>
+</aside>
     </div>
-            </main>
-        </div>
-    </div>
+  </div>
+</div></section>
+</main>
 
-    <footer>
-        <div class="container-fluid copybg">
-            <div class="container mx-auto">
-                <div class="row">
-                    <div class="col-12 col-md-6 small copyleft"><a href="info.html">Privacy Notice</a><span style="padding:0 20px">|</span><a href="info.html">Terms &amp; Conditions</a></div>
-                    <div class="col-12 col-md-6 small copyright">Copyright &copy; 2026 All rights reserved</div>
-                </div>
-            </div>
-        </div>
-    </footer>
+<footer class="site-footer"><div class="container"><div class="inner"><a class="brand" href="home.html" aria-label="PYXiiS DIGI home"><span class="mark"><svg><use href="#i-logo"/></svg></span><span>PYXiiS<small>DIGI</small></span></a><nav class="footer-links" aria-label="Legal"><a href="info.html">Privacy notice</a><a href="info.html">Terms and conditions</a><a href="contact-us.html">Contact us</a></nav><span class="copy">Copyright &copy; 2026 PYXiiS DIGI. All rights reserved</span><a href="#top" class="circle-btn" aria-label="Back to top"><svg><use href="#i-up"/></svg></a></div></div></footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-    <script src="assets/js/min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/loadpage.js"></script>
-    <script src="assets/js/toastr.min.js"></script>
-    <script src="assets/slick/slick.min.js"></script>
-    <script>
-        $(function () {
-            $('.top_slider').slick({
-                dots: true, infinite: true, dotsClass: "slick-dots container m-auto",
-                slidesToShow: 1, slidesToScroll: 1, arrows: true,
-                prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Previous">Previous</button>',
-                nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Next">Next</button>'
-            });
-        });
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/site.js"></script>
 </body>
 </html>
