@@ -1,34 +1,44 @@
-# Partner Portal HTML template
+# PYXiiS DIGI Partner Portal template
 
-Static HTML reference for the DenebLoyalty Partner Portal. Open any page directly in a browser; no server needed.
+Static HTML reference for the DenebLoyalty partner portal. Open any page directly in a browser; no server or build step.
 
-## Files
+## Pages
 
 | File | What it is |
 |---|---|
-| `layout-anonymous.html` | Page frame for sign-in, register, forgot password, contact us and information pages: white header with logo, three-item menu, footer. |
-| `layout-member.html` | Page frame for signed-in pages: topbar with the member menu and cart count, point summary header, footer. Includes the slick carousel initialisation. |
-| `login.html`, `register.html`, `forgot-password.html` | Anonymous pages. |
-| `home.html` | Signed-in home: banner carousel, point summary, campaign progress cards, content block, terms modal. |
-| `catalogue.html`, `cart.html`, `checkout.html`, `order-placed.html`, `history.html` | Rewards flow with the three-step progress indicator. |
-| `statement.html`, `profile.html` | Account pages. |
+| `layout-member.html` | Frame for signed-in pages: nav with cart and user chip, page head band, points card, footer. Copy this to start a new member page. |
+| `layout-anonymous.html` | Frame for pre-login pages: three-item nav with Sign in button, page head band, footer. |
+| `home.html` | Signed-in home: hero carousel, points card, tier progress, campaigns, featured rewards, value strip, terms modal. |
+| `login.html`, `forgot-password.html` | Split auth layout: image panel plus form card. |
+| `register.html` | Company registration form. |
+| `catalogue.html`, `cart.html`, `checkout.html`, `order-placed.html` | Redemption flow with the three-step indicator. |
+| `history.html`, `statement.html`, `profile.html` | Account and activity pages. |
 | `contact-us.html`, `info.html` | Support and information pages. |
-| `assets/css/min.css` | The customised Bootstrap 4.5.3 build. Loaded before the Bootstrap 5.1.3 CDN stylesheet, as in the original. |
-| `assets/css/custom.css`, `customs.css`, `navbar.css`, `layout.css`, `style.css`, `icons.css`, `fonts.css`, `carousel-slide.css`, `loadpage.css`, `toaster.css` | Site styles. `icons.css` maps the `icon_*` classes to the SVGs in `assets/images/icons`. |
-| `assets/js/min.js` | Bootstrap 4.5.3 bundle matching `min.css`. |
-| `assets/js/navbar.js`, `loadpage.js`, `carousel-slide.js`, `toastr.min.js`, `form-validation.js`, `validation.js` | Site scripts. |
-| `assets/slick/` | Slick carousel (CSS, theme, script, fonts) used by the home banner. |
-| `assets/font/` | Decimal and Montserrat font files referenced by `fonts.css`. |
-| `assets/images/` | Layout images (logo, arrows), page banners, icons, sample reward image. |
 
-## Conventions in the markup
+## Assets
 
-- Page banner: `div.main-banner` with a background image, `hr.title-line` and an `h1.text-white.text-semibold`.
-- Section heading: `hr.title-line` followed by `h4.text-semibold`.
-- Buttons: `btn btn-arrow btn-yellow` (primary), `btn btn-arrow btn-blue` (secondary). Paired buttons sit in `dual-btn-left` and `dual-btn-right`.
-- Forms: `div.form > div.form-group > div.row > div.col-md-6` with `label.form-label` and `input.form-control`; required marker is `span.asterisk`.
-- Tables: `table.pl-table` for lists (each `td` carries `data-label` for the mobile card layout); `table.redemption_table` for the cart.
-- Custom checkbox: `label.checkbox-container > input[type=checkbox] + span.checkmark`.
-- Toggle switch: `label.switch > input[type=checkbox] + span.slider.round`.
-- Redemption steps: `div#progress > ul#progress-num > li.step` with `complete` on the current step.
-- The white curve under a banner is the inline `svg.mask_wrapper` block.
+| File | Purpose |
+|---|---|
+| `assets/css/theme.css` | Design tokens (colours, type, radius, shadow), nav, footer, buttons, pills, meters, cards, points card. Loaded by every page. |
+| `assets/css/pages.css` | Inner page components: page head band, redemption steps, forms, tables, status pills, filters, catalogue grid, cart, order confirmation, prose, contact and profile side panels. Loaded by every page except home. |
+| `assets/css/home.css` | Home page only: hero, tier, campaigns, featured rewards. |
+| `assets/css/fonts.css` | Montserrat font faces (Regular, Medium, SemiBold, Bold). |
+| `assets/js/site.js` | Injects the SVG icon sprite, runs the hero carousel, mobile nav toggle, and the terms modal trigger. |
+| `assets/font/montserrat/` | The four Montserrat weights referenced by `fonts.css`. |
+| `assets/images/banner/` | Page head and hero backgrounds. |
+| `assets/images/layout/prelogin_bg.jpg` | Auth page image panel. |
+| `assets/images/rewards/` | Reward images. |
+
+Bootstrap 5.3 is loaded from the jsDelivr CDN and provides the grid, form base styles and the modal. Nothing else is loaded.
+
+## Conventions
+
+- Page head: `section.page-head` with `div.page-head-img` (inline `background-image`) and a `.container` holding optional `.crumbs`, `.kicker`, `h1`, `p.lead-x`. Add `has-stats` when the points card follows.
+- Points card: `div.container.stats-wrap > div.card-x.stats`. Only on member pages.
+- Content: `section.page-body` (add `after-stats` when following the points card), blocks are `div.card-x.card-pad.block` with an `h2.block-title`.
+- Buttons: `btn btn-gold` primary, `btn btn-blue-soft` secondary, `btn btn-navy` for filter apply, `btn-sm` for compact.
+- Forms: Bootstrap `row g-3` with `col-md-6`, `label.form-label` (required marker is `span.req`), `input.form-control` or `select.form-select`. Checkboxes use Bootstrap `form-check`.
+- Tables: `table.table-x.stack` inside `div.table-wrap`; every `td` carries `data-label` so the table stacks into cards under 768px. Numeric columns use `.num`; status uses `span.status.status-<state>`.
+- Redemption steps: `ol.steps` with `li.done`, `li.current`.
+- Icons: `<svg><use href="#i-name"/></svg>`. The sprite is injected by `site.js`; add new symbols there.
+- Terms modal: set `data-terms-accepted="false"` on `<body>` and `site.js` opens `#tncModal` on load.
