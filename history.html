@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Order history - Partner Portal</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/2.3.0/css/reset.min.css">
+    <link rel="stylesheet" href="assets/css/min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/customs.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/loadpage.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/carousel-slide.css">
+    <link rel="stylesheet" href="assets/slick/slick.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- TOPBAR: rendered from the member menu -->
+    <div id="nav-header">
+        <div class="over-menu"></div>
+        <div class="container-fluid">
+            <header class="header">
+                <div class="container">
+                    <div class="hamburger-menu"><div class="bar"></div></div>
+                    <div class="row">
+                        <div class="col-12 col-lg-3 logo"><div><a href="home.html"><img src="assets/images/layout/logo-white.png" alt="Logo"></a></div></div>
+                        <div class="col-lg-9 desk-menu">
+                            <nav class="box-menu">
+                                <div class="menu-container">
+                                    <div class="menu-head logo"><img src="assets/images/layout/logo-white.png" alt="Logo"></div>
+                                    <div class="menu-header-container mobiledraw">
+                                        <ul id="cd-primary-nav" class="menu">
+                                            <li class="menu-item mainnav"><a href="home.html">Home</a></li>
+                                            <li class="menu-item mainnav menu-item-has-children">
+                                                <a href="#">Earn</a>
+                                                <ul class="sub-menu">
+                                                    <li class="back"><a href="#">Earn</a></li>
+                                                    <li><div class="text-left"><ul>
+                                                        <li class="menu-item"><a href="#">Campaigns</a></li>
+                                                        <li class="menu-item"><a href="#">Incentives</a></li>
+                                                        <li class="menu-item"><a href="#">Deal registration</a></li>
+                                                        <li class="menu-item"><a href="#">Product registration</a></li>
+                                                        <li class="menu-item"><a href="#">Training and certification</a></li>
+                                                        <li class="menu-item"><a href="#">Referrals</a></li>
+                                                    </ul></div></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item mainnav menu-item-has-children">
+                                                <a href="#">Rewards</a>
+                                                <ul class="sub-menu">
+                                                    <li class="back"><a href="#">Rewards</a></li>
+                                                    <li><div class="text-left"><ul>
+                                                        <li class="menu-item"><a href="catalogue.html">Catalogue</a></li>
+                                                        <li class="menu-item"><a href="#">Categories</a></li>
+                                                        <li class="menu-item"><a href="cart.html">Cart</a></li>
+                                                    </ul></div></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item mainnav menu-item-has-children">
+                                                <a href="#">Benefits</a>
+                                                <ul class="sub-menu">
+                                                    <li class="back"><a href="#">Benefits</a></li>
+                                                    <li><div class="text-left"><ul>
+                                                        <li class="menu-item"><a href="#">Partner tier benefits</a></li>
+                                                        <li class="menu-item"><a href="#">Exclusive offers</a></li>
+                                                        <li class="menu-item"><a href="info.html">Programme benefits</a></li>
+                                                    </ul></div></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item mainnav menu-item-has-children">
+                                                <a href="#">Activity</a>
+                                                <ul class="sub-menu">
+                                                    <li class="back"><a href="#">Activity</a></li>
+                                                    <li><div class="text-left"><ul>
+                                                        <li class="menu-item"><a href="statement.html">Points earned</a></li>
+                                                        <li class="menu-item"><a href="statement.html">Points redeemed</a></li>
+                                                        <li class="menu-item"><a href="statement.html">Transactions</a></li>
+                                                        <li class="menu-item"><a href="history.html">Pending rewards and orders</a></li>
+                                                        <li class="menu-item"><a href="statement.html">Expiring points</a></li>
+                                                    </ul></div></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item mainnav menu-item-has-children">
+                                                <a href="#">My company</a>
+                                                <ul class="sub-menu">
+                                                    <li class="back"><a href="#">My company</a></li>
+                                                    <li><div class="text-left"><ul>
+                                                        <li class="menu-item"><a href="#">Users and invites</a></li>
+                                                        <li class="menu-item"><a href="#">Company profile</a></li>
+                                                    </ul></div></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item mainnav menu-item-has-children">
+                                                <a href="#">Support</a>
+                                                <ul class="sub-menu">
+                                                    <li class="back"><a href="#">Support</a></li>
+                                                    <li><div class="text-left"><ul>
+                                                        <li class="menu-item"><a href="contact-us.html">Contact us</a></li>
+                                                        <li class="menu-item"><a href="info.html">FAQ</a></li>
+                                                        <li class="menu-item"><a href="info.html">Programme rules</a></li>
+                                                    </ul></div></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item mainnav cart-icon"><a href="cart.html"><i class="icon_cart"></i><span class="cart-no">2</span></a></li>
+                                            <li class="menu-item"><a href="profile.html">My profile</a></li>
+                                            <li class="menu-item"><a href="login.html">Sign out</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="postlogin">
+        <div>
+            <main role="main" class="pb-3">
+
+    <div class="content-section">
+
+    <div class="main-banner" style="background-image: url('assets/images/banner/profile_bg.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 static-banner-title">
+                    <hr class="title-line" />
+                    <h1 class="text-white text-semibold">Pending Rewards and Order History</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+                <!-- POINT SUMMARY: shown on every signed-in page -->
+                <div class="a_mask_wrapper pt-4 pb-2 bg-grey">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-12 mb-5 text-white profile-text">
+                                        <hr class="title-line" />
+                                        <h1 class="text-regular">Priya Raman</h1>
+                                        <p>Gold partner<br>Company: Northwind Distribution</p>
+                                        <div class="clearfix mt-5"></div>
+                                        <a href="#" class="btn-link-blue">Tier benefits</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 point-sum-wrapper">
+                                <div class="row">
+                                    <div class="col-6"><div class="points-sum"><div class="points-sum_icon"><i class="icons icon_coin"></i></div><div class="points-sum_details"><h3>12,450</h3><p>Available Points</p></div></div></div>
+                                    <div class="col-6"><div class="points-sum"><div class="points-sum_icon"><i class="icons icon_trophy"></i></div><div class="points-sum_details"><h3>1,200</h3><p>Pending Points</p></div></div></div>
+                                    <div class="col-6"><div class="points-sum"><div class="points-sum_icon"><i class="icons icon_reward"></i></div><div class="points-sum_details"><h3>3,800</h3><p>Points Redeemed</p></div></div></div>
+                                    <div class="col-6"><div class="points-sum"><div class="points-sum_icon"><i class="icons icon_clock"></i></div><div class="points-sum_details"><h3>250</h3><p>Points Expired</p></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        <form method="post">
+        <div class="container mt-5">
+            <div class="row"><div class="col-12 mb-5"><hr class="title-line" /><h4 class="text-semibold">Filter</h4></div></div>
+            <div class="form">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-4"><label class="form-label">Status</label><select class="form-control"><option>All</option><option>Submitted</option><option>Approved</option><option>Shipped</option><option>Delivered</option><option>Cancelled</option></select></div>
+                        <div class="col-md-4"><label class="form-label">Start date</label><input class="form-control" type="date"></div>
+                        <div class="col-md-4"><label class="form-label">End date</label><input class="form-control" type="date"></div>
+                    </div>
+
+                <div class="row">
+                    <div class="col-12 mt-5 mb-5 text-center">
+                        <div class="col-md-7 m-auto">
+                            <div class="row">
+                                <div class="col-md-6 dual-btn-left"><a href="#" class="btn btn-arrow btn-blue">View all</a></div>
+                                <div class="col-md-6 dual-btn-right"><button class="btn btn-arrow btn-yellow" type="submit">Apply</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            <div class="clearfix mt-5"></div>
+            <table id="history-table" class="pl-table">
+                <thead><tr><th scope="col">Order number</th><th scope="col">Date</th><th scope="col">Status</th><th scope="col">Items</th><th scope="col">Points</th><th scope="col"></th></tr></thead>
+                <tbody>
+                <tr>
+                    <td data-label="Order number">RO-2026-000123</td>
+                    <td data-label="Date">08-09-2026</td>
+                    <td data-label="Status"><span class="badge bg-secondary">Approved</span></td>
+                    <td data-label="Items">Amazon voucher 50 x 2, Training credit x 1</td>
+                    <td data-label="Points">6,000</td>
+                    <td data-label=""><button type="button" class="btn btn-link btn-sm p-0">Cancel</button></td>
+                </tr>
+                <tr>
+                    <td data-label="Order number">RO-2026-000098</td>
+                    <td data-label="Date">21-08-2026</td>
+                    <td data-label="Status"><span class="badge bg-secondary">Shipped</span></td>
+                    <td data-label="Items">Wireless headphones x 1</td>
+                    <td data-label="Points">6,000</td>
+                    <td data-label=""></td>
+                </tr>
+                <tr>
+                    <td data-label="Order number">RO-2026-000071</td>
+                    <td data-label="Date">02-07-2026</td>
+                    <td data-label="Status"><span class="badge bg-secondary">Delivered</span></td>
+                    <td data-label="Items">Smart speaker x 1</td>
+                    <td data-label="Points">9,500</td>
+                    <td data-label=""></td>
+                </tr>
+                <tr>
+                    <td data-label="Order number">RO-2026-000060</td>
+                    <td data-label="Date">15-06-2026</td>
+                    <td data-label="Status"><span class="badge bg-secondary">Cancelled</span></td>
+                    <td data-label="Items">Coffee machine x 1</td>
+                    <td data-label="Points">14,000</td>
+                    <td data-label=""></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+        </form>
+    </div>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid copybg">
+            <div class="container mx-auto">
+                <div class="row">
+                    <div class="col-12 col-md-6 small copyleft"><a href="info.html">Privacy Notice</a><span style="padding:0 20px">|</span><a href="info.html">Terms &amp; Conditions</a></div>
+                    <div class="col-12 col-md-6 small copyright">Copyright &copy; 2026 All rights reserved</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="assets/js/min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/loadpage.js"></script>
+    <script src="assets/js/toastr.min.js"></script>
+    <script src="assets/slick/slick.min.js"></script>
+    <script>
+        $(function () {
+            $('.top_slider').slick({
+                dots: true, infinite: true, dotsClass: "slick-dots container m-auto",
+                slidesToShow: 1, slidesToScroll: 1, arrows: true,
+                prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Previous">Previous</button>',
+                nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Next">Next</button>'
+            });
+        });
+    </script>
+</body>
+</html>

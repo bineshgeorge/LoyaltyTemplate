@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (min-width: 1400px){
+.container { max-width: 1140px; }
+}
+
+/*---- TOP HEADER -------- */
+.header-top { background: #f4f4f2; z-index: 9999999; position: relative;}
+
+@media screen and (max-width:991px) {
+.header-top { display: none; }
+}
+/*---- END OF TOP HEADER -------- */
+
+
+
+/*------ FOOTER -------*/
+footer { background-color: #F4F4F2; padding: 2em 0; }
+
+
+.copyleft a { font-size: 14px;}
+.copyright { text-align: right; font-size: 14px;}
+
+
+@media screen and (max-width:768px) {
+footer { text-align: center; }
+.copyright { text-align: center; margin-top: 2em; }
+}
+/*------ END OF FOOTER -------*/
+
+
+/*------- GENERAL ------*/
+.a_mask_wrapper {
+	position: relative;
+	z-index: 99;
+}
+
+@media screen and (min-width: 991px) {
+	.content-section {
+		padding: 4.4em 0 1em;
+	}
+	
+	.full-page .content-section {
+		min-height: 649px;
+		height: calc(100vh - 134px);
+	}
+}
+
+
+
+@media screen and (max-width: 991px) {
+.container { max-width: 100% !important; }
+	
+	.content-section {
+		padding: 4.3em 0 1em;
+	}
+	
+	.full-page .content-section {
+		min-height: 758px;
+		height: calc(100vh - 190px);
+	}
+	
+}
+
+
+
+/*------- END OF GENERAL ------*/
+
+
+
+
+
