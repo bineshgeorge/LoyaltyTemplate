@@ -21,20 +21,6 @@
 .hero-points div::after{content:"";width:1px;height:26px;background:rgba(255,255,255,.35);order:-1}
 .hero-points svg{width:26px;height:26px;order:-2;color:#fff}
 
-/* ---- Stats card overlapping hero ---- */
-.stats-wrap{margin-top:-88px;position:relative;z-index:4}
-.stats{display:flex;align-items:stretch;padding:8px}
-.stats>div{flex:1;padding:22px 24px;border-left:1px solid var(--line);text-align:center}
-.stats>div:first-child{border-left:0;flex:1.4;text-align:left;display:flex;align-items:center;gap:16px}
-.stats .who strong{display:block;font-family:var(--font-bold);font-size:18px;line-height:1.2}
-.stats .who span{display:block;font-size:13px;color:var(--ink-2)}
-.stats .who a{margin-left:auto;color:var(--ink-2)}
-.stats .who span.avatar{display:grid;place-items:center;width:64px;height:64px;font-size:20px;color:var(--navy);flex:none}
-.stats .who a svg{width:18px;height:18px}
-.stats .num{font-family:var(--font-bold);font-size:24px;line-height:1.1;margin:8px 0 4px}
-.stats .lbl{font-size:12px;color:var(--ink-2)}
-.stats svg{width:26px;height:26px;color:var(--gold-deep)}
-
 /* ---- Tier ---- */
 .tier{padding:56px 0 0}
 .tier-card{display:grid;grid-template-columns:1fr 1fr;overflow:hidden;background:var(--canvas)}
@@ -84,9 +70,6 @@
   .hero-img{width:100%}
   .hero-img::before{background:linear-gradient(90deg,var(--navy) 0%,rgba(15,42,74,.85) 40%,rgba(15,42,74,.4) 100%)}
   .hero-points{display:none}
-  .stats{flex-wrap:wrap}
-  .stats>div{flex:1 1 50%;border-left:0;border-top:1px solid var(--line)}
-  .stats>div:first-child{flex:1 1 100%;border-top:0}
   .tier-card{grid-template-columns:1fr}
   .tier-copy{padding:0 0 28px}
 }

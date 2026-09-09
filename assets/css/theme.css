@@ -145,3 +145,22 @@ img{max-width:100%}
 .value-strip strong{display:block;font-family:var(--font-bold);font-size:15px}
 .value-strip span{font-size:13px;color:var(--ink-2)}
 @media (max-width:767.98px){.value-strip .row>div{border-left:0;border-top:1px solid var(--line);padding:18px 12px}.value-strip .row>div:first-child{border-top:0}}
+
+/* ============ Member stats card (overlaps hero / page head) ============ */
+.stats-wrap{margin-top:-88px;position:relative;z-index:4}
+.stats{display:flex;align-items:stretch;padding:8px}
+.stats>div{flex:1;padding:22px 24px;border-left:1px solid var(--line);text-align:center}
+.stats>div:first-child{border-left:0;flex:1.4;text-align:left;display:flex;align-items:center;gap:16px}
+.stats .who strong{display:block;font-family:var(--font-bold);font-size:18px;line-height:1.2}
+.stats .who span{display:block;font-size:13px;color:var(--ink-2)}
+.stats .who a{margin-left:auto;color:var(--ink-2)}
+.stats .who span.avatar{display:grid;place-items:center;width:64px;height:64px;font-size:20px;color:var(--navy);flex:none}
+.stats .who a svg{width:18px;height:18px}
+.stats .num{font-family:var(--font-bold);font-size:24px;line-height:1.1;margin:8px 0 4px}
+.stats .lbl{font-size:12px;color:var(--ink-2)}
+.stats svg{width:26px;height:26px;color:var(--gold-deep)}
+@media (max-width:991.98px){
+  .stats{flex-wrap:wrap}
+  .stats>div{flex:1 1 50%;border-left:0;border-top:1px solid var(--line)}
+  .stats>div:first-child{flex:1 1 100%;border-top:0}
+}
